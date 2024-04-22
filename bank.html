@@ -17,7 +17,7 @@
         <div class="grid grid-cols-3 grid-flow-col gap-4  w-9/12 mx-auto mt-10 text-white">
           <div class="bg-slate-400 rounded-xl p-8">
             <h1 class="text-2xl">Deposit</h1>
-            <h3 class="text-5xl">$00</h3>
+            <h3 class="text-5xl">$<span id="deposit-tottal">00</span></h3>
 
           </div>
           <!-- ... -->
@@ -35,23 +35,24 @@
       <!-- new section  -->
 
       <section>
-        <div class="grid grid-cols-2 grid-flow-col gap-4  w-9/12 mx-auto mt-10 text-white">
+        <div class="grid grid-cols-2 grid-flow-col gap-4  w-9/12 mx-auto mt-10 ">
             <div class="bg-slate-400 rounded-xl p-8">
-              <h1 class="text-2xl">Please Deposit</h1>
-              <input class="p-2 rounded-lg w-9/12 mt-5" type="text" placeholder="$ amount you want to deposit">
-              <button class="block mt-2 btn-primary text-zinc-50 bg-blue-700
+              <h1 class="text-2xl text-white">Please Deposit</h1>
+              <input id="deposit-fild" class="p-2 rounded-lg w-9/12 mt-5" type="text" placeholder="$ amount you want to deposit">
+              <button id="btn-deposit" class="block mt-2 btn-primary text-zinc-50 bg-blue-700
               p-3 rounded-xl font-bold text-xl">Deposit</button>
   
             </div>
             <!-- ... -->
             <div class="bg-red-200 rounded-xl p-8">
-              <h1 class="text-2xl">Please withdraw</h1>
+              <h1 class="text-2xl text-white">Please withdraw</h1>
               <input class="p-2 rounded-lg w-9/12 mt-5" type="text" placeholder="$ amount you want to withdraw ">
-              <button class="block mt-2 btn-primary text-zinc-50 bg-blue-400
+              <button id="btn-withdraw" class="block mt-2 btn-primary text-zinc-50 bg-blue-400
               p-3 rounded-xl font-bold text-xl">withdraw</button>
             </div>
           </div>
       </section>
     </main>
+    <script src="./js/deposit.js"></script>
   </body>
 </html>
