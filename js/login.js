@@ -12,6 +12,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
         console.log('valid user');
     }
     else{
+        alert('tor baper bank eta je vull password diye cesta kortecis');
         console.log('invalid user');
     }
 })
