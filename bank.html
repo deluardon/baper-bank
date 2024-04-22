@@ -23,12 +23,12 @@
           <!-- ... -->
           <div class="bg-red-200 rounded-xl p-8">
             <h1 class="text-2xl">withdraw</h1>
-            <h3 class="text-5xl">$00</h3>
+            <h3 class="text-5xl">$<span id="withdraw-tottal">00</span></h3>
 
           </div>
           <div class="bg-lime-600 rounded-xl p-8">
             <h1 class="text-2xl">balance</h1>
-            <h3 class="text-5xl">$1200</h3>
+            <h3 class="text-5xl">$<span id="balance-tottal">1200</span></h3>
           </div>
         </div>
       </section>
@@ -46,13 +46,14 @@
             <!-- ... -->
             <div class="bg-red-200 rounded-xl p-8">
               <h1 class="text-2xl text-white">Please withdraw</h1>
-              <input class="p-2 rounded-lg w-9/12 mt-5" type="text" placeholder="$ amount you want to withdraw ">
+              <input id="withdraw-flied" class="p-2 rounded-lg w-9/12 mt-5" type="text" placeholder="$ amount you want to withdraw ">
               <button id="btn-withdraw" class="block mt-2 btn-primary text-zinc-50 bg-blue-400
               p-3 rounded-xl font-bold text-xl">withdraw</button>
             </div>
           </div>
       </section>
     </main>
+    <script src="./js/withdraw.js"></script>
     <script src="./js/deposit.js"></script>
   </body>
 </html>
